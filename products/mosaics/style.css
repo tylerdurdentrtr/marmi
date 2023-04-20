@@ -1,0 +1,267 @@
+.header {
+  background-image: url("../../images/brown-marble.jpg");
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.header h1 {
+  font-size: 3.12rem;
+}
+
+.main-categories img {
+  width: 155px;
+}
+
+.main-categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.marble {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+  align-items: center;
+}
+
+.pics {
+  /* background-color: red; */
+  /* padding: 10px; */
+  /* cursor: pointer; */
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.pic {
+  cursor: pointer;
+  /* background-color: red; */
+  position: relative;
+  height: 200px;
+}
+
+.pic:hover .pic-lay {
+  display: flex;
+  /* transition: all 0.5s ease-out; */
+}
+
+.pic-lay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.668);
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  /* transition: all 0.5s ease-out; */
+}
+
+.pic-lay p {
+  color: white;
+  font-size: 25px;
+}
+
+.pics img:hover {
+  background-color: red;
+}
+
+.marble p {
+  text-align: center;
+}
+
+.marble:nth-of-type(even) {
+  /* background-image: url("https://c1.wallpaperflare.com/preview/231/497/78/marble-italian-material-surface.jpg"); */
+  /* background-attachment: fixed; */
+  background-color: lightgray;
+}
+
+.btn {
+  background-color: rgb(69, 69, 69);
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(80, 80, 80);
+}
+
+.marbles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 75px 0;
+  width: min(90%, 500px);
+  margin: auto;
+}
+
+.marbles img {
+  width: 150px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.marbles img:hover {
+  /* width: 175px; */
+  transform: scale(1.1);
+}
+
+.mts-container {
+  width: min(100%, 1200px);
+  margin: auto;
+  /* background-color: red; */
+  /* background-color: red; */
+  /*  */
+}
+
+.mts-middle {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 50px 0;
+}
+
+.mts-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 0;
+}
+
+.mts-bottom i {
+  background-color: gray;
+  padding: 15px;
+  border-radius: 100%;
+  font-size: 25px;
+}
+
+.mts-wrapper:nth-of-type(even) {
+  background-color: rgb(235, 235, 235);
+  background-attachment: fixed;
+}
+
+.bd-example {
+  width: 500px;
+}
+
+/* .pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gold-row .pic {
+    margin-right: 20px;
+  }
+  
+  .pic img {
+    height: 100%;
+    width: 265px;
+  } */
+
+@media screen and (max-width: 1200px) {
+  /* .nav-bottom {
+      display: none;
+    }
+  
+    .last-nav-bottom-container ul li {
+      display: none;
+    } */
+
+  .header-box-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pic {
+    margin-bottom: 15px;
+  }
+
+  /* .pic img {
+      width: 100%;
+    } */
+
+  /* .mts-top-left img {
+      width: 50%;
+    } */
+
+  .mts-container {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  /* html {
+      font-size: 10px;
+    } */
+
+  .marbles {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pics {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* .pic-row {
+      flex-direction: column;
+    } */
+
+  .mts {
+    flex-direction: column;
+  }
+
+  /* .mts-top-left img {
+      width: 50%;
+    } */
+
+  .mts-container {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 538px) {
+  /* .nav-bottom {
+      display: none;
+    }
+  
+    .last-nav-bottom-container ul li {
+      display: none;
+    } */
+
+  .header-box-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* .mts-top-left img {
+      width: 50%;
+    } */
+
+  .mts-container {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .pic img {
+    width: 100%;
+  }
+
+  /* body {
+      background-color: red;
+    } */
+}

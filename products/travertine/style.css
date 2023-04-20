@@ -1,0 +1,93 @@
+.header {
+  background-image: url("../../images/brown-marble.jpg");
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.header h1 {
+  font-size: 3.12rem;
+}
+
+.travertine-section {
+  /* background-color: rgb(245, 245, 245); */
+}
+
+.travertine-container {
+  width: min(90%, 950px);
+  margin: auto;
+  padding: 20px 0;
+}
+
+.travertine-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.travertine-type {
+  /* padding: 50px 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 3px solid rgb(38, 38, 38);
+  cursor: pointer;
+  border-radius: 5px; */
+}
+
+.travertine-type {
+  text-align: center;
+  cursor: pointer;
+  padding-bottom: 10px;
+  color: white;
+  background-color: rgb(73, 73, 73);
+}
+
+.travertine-type:hover {
+  background-color: rgb(100, 100, 100);
+}
+
+/* .travertine-type:hover {
+  background-color: black;
+  color: white;
+} */
+
+.travertine-type img {
+  width: 300px;
+}
+
+.travertine-type a {
+  color: white;
+}
+
+.nav-menu li a {
+  text-transform: uppercase;
+}
+
+.travertine-type h2 {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 970px) {
+  .travertine-row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 538px) {
+  /* .nav-bottom {
+    display: none;
+  }
+
+  .last-nav-bottom-container ul li {
+    display: none;
+  } */
+
+  /* .header-box-container {
+    flex-direction: column;
+    align-items: center;
+  } */
+}

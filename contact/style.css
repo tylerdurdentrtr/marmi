@@ -1,0 +1,98 @@
+.header {
+  background-image: url("../images/brown-marble.jpg");
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.nav-container > i {
+  display: none;
+}
+
+.contact-section {
+  /* background-color: rgb(205, 205, 205); */
+  padding: 50px 0;
+}
+
+.contact-container {
+  width: min(90%, 1000px);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 110px;
+}
+
+.contact-container > h1 {
+  margin-bottom: -50px;
+}
+
+.contact-area {
+  display: flex;
+  gap: 10px;
+}
+
+.adresses {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.adress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  /* background-color: red; */
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.122);
+  padding: 35px 10px;
+  border-radius: 3px;
+}
+
+.adress i {
+  background-color: rgb(64, 64, 64);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: white;
+}
+
+.adress p {
+  font-weight: bold;
+}
+
+.nav-menu li a {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 890px) {
+  .adresses {
+    flex-direction: column;
+    align-items: center;
+
+    gap: 100px;
+  }
+
+  .contact-area {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-map {
+    width: 350px;
+  }
+
+  .nav-container > i {
+    display: block;
+  }
+}

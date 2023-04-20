@@ -1,0 +1,109 @@
+.header {
+  background-image: url("../images/brown-marble.jpg");
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.nav-container > i {
+  display: none;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.services-container {
+  width: min(90%, 1000px);
+  margin: auto;
+}
+
+.services-section-top,
+.services-section-bottom {
+  padding: 50px 0;
+}
+
+.earnings {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.earning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.services-section-bottom {
+  background-color: lightgray;
+  padding: 50px;
+}
+
+.svc-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.services-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.services-box {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.services-first-text {
+  font-weight: bold;
+}
+.nav-menu li a {
+  text-transform: uppercase;
+}
+
+.services-box p,
+.earning p {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 760px) {
+  .earnings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .services-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-box {
+    width: auto;
+  }
+
+  .nav-container > i {
+    display: block;
+  }
+}

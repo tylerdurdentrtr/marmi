@@ -1,0 +1,159 @@
+.header {
+  background-image: url("../images/brown-marble.jpg");
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.header h1 {
+  font-size: 3.12rem;
+}
+
+.main-categories img {
+  width: 155px;
+}
+
+.main-categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.marble {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+  align-items: center;
+}
+
+.pics {
+  /* background-color: red; */
+  /* padding: 10px; */
+  /* cursor: pointer; */
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.pic {
+  cursor: pointer;
+  /* background-color: red; */
+  position: relative;
+  height: 200px;
+}
+
+.pic img {
+  width: 200px;
+}
+
+.pic:hover .pic-lay {
+  display: flex;
+  /* transition: all 0.5s ease-out; */
+}
+
+.pic-lay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.668);
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  /* transition: all 0.5s ease-out; */
+}
+
+.pic-lay p {
+  color: white;
+  font-size: 25px;
+}
+
+.pics img:hover {
+  background-color: red;
+}
+
+.marble p {
+  text-align: center;
+}
+
+.marble:nth-of-type(odd) {
+  /* background-image: url("../images/background.jpg"); */
+  background-color: lightgray;
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  background-attachment: fixed;
+}
+
+.marbles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 75px 0;
+  width: min(90%, 500px);
+  margin: auto;
+}
+
+.marbles img {
+  width: 150px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.marbles img:hover {
+  /* width: 175px; */
+  transform: scale(1.1);
+}
+
+/* .modal {
+  display: none;
+} */
+
+.modal-img {
+  width: 300px;
+}
+
+.fotolar img {
+  width: 150px;
+  cursor: pointer;
+}
+
+.nav-menu li a {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 870px) {
+  /* html {
+    font-size: 10px;
+  } */
+
+  .marbles {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pics {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 538px) {
+  /* .nav-bottom {
+    display: none;
+  }
+
+  .last-nav-bottom-container ul li {
+    display: none;
+  } */
+
+  .header-box-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
