@@ -5,24 +5,37 @@ var right = document.querySelector(".modal-right");
 var closeMod = document.querySelector(".close-modal");
 var modalImg = document.querySelector(".modal-img");
 var number = 0;
-// let eleman = 50;
 var src;
 var arr;
 let photoArr = [];
 let photos = [
-  "../../images/marble-photos/granite/1.jpg",
-  "../../images/marble-photos/granite/2.jpg",
-  "../../images/marble-photos/granite/3.jpg",
-  "../../images/marble-photos/granite/4.jpg",
-  "../../images/marble-photos/granite/5.jpg",
-  "../../images/marble-photos/granite/6.jpg",
-  "../../images/marble-photos/granite/7.jpg",
-  "../../images/marble-photos/granite/8.jpg",
-  "../../images/marble-photos/granite/9.jpg",
-  "../../images/marble-photos/granite/10.jpg",
-  "../../images/marble-photos/granite/11.jpg",
-  "../../images/marble-photos/granite/12.jpg",
-  "../../images/marble-photos/granite/13.jpg",
+  "../../images/tas/split-face/1.jpg",
+  "../../images/tas/split-face/2.jpg",
+  "../../images/tas/split-face/3.jpg",
+  "../../images/tas/split-face/4.jpg",
+  "../../images/tas/split-face/5.jpg",
+  "../../images/tas/split-face/6.jpg",
+  "../../images/tas/split-face/7.jpg",
+  "../../images/tas/split-face/8.jpg",
+  "../../images/tas/split-face/9.jpg",
+  "../../images/tas/split-face/10.jpg",
+  "../../images/tas/split-face/11.jpg",
+  "../../images/tas/split-face/12.jpg",
+  "../../images/tas/split-face/13.jpg",
+  "../../images/tas/split-face/14.jpg",
+  "../../images/tas/split-face/15.jpg",
+  "../../images/tas/split-face/16.jpg",
+  "../../images/tas/split-face/17.jpg",
+  "../../images/tas/split-face/18.jpg",
+  "../../images/tas/split-face/19.jpg",
+  "../../images/tas/split-face/20.jpg",
+  "../../images/tas/split-face/21.jpg",
+  "../../images/tas/split-face/22.jpg",
+  "../../images/tas/split-face/23.jpg",
+  "../../images/tas/split-face/24.jpg",
+  "../../images/tas/split-face/25.jpg",
+  "../../images/tas/split-face/26.jpg",
+  "../../images/tas/split-face/27.jpg",
 ];
 images.forEach((image) => {
   image.addEventListener("click", () => {
@@ -42,32 +55,22 @@ images.forEach((image) => {
   });
 });
 
-// closeMod.addEventListener("click", () => {
-//   modal.style.display = "none";
-// });
-
-// modal.addEventListener("click", () => {
-//   modal.style.display = "none";
-// });
 window.onclick = function (e) {
   if (e.target == modal) {
     modal.style.display = "none";
   }
 };
-// let createArr = (length, path) => {};
 
 left.addEventListener("click", () => {
   number--;
   if (number < 0) number = photos.length - 1;
   modalImg.setAttribute("src", photos[number]);
   console.log(number);
-  // console.log(modalImg.getAttribute("src"));
 });
 
 right.addEventListener("click", () => {
   number++;
   if (number >= photos.length) number = 0;
   modalImg.setAttribute("src", photos[number]);
-  // console.log(number);
   console.log(modalImg.getAttribute("src"));
 });

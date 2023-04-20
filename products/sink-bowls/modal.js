@@ -5,24 +5,25 @@ var right = document.querySelector(".modal-right");
 var closeMod = document.querySelector(".close-modal");
 var modalImg = document.querySelector(".modal-img");
 var number = 0;
-// let eleman = 50;
 var src;
 var arr;
 let photoArr = [];
 let photos = [
-  "../../images/marble-photos/granite/1.jpg",
-  "../../images/marble-photos/granite/2.jpg",
-  "../../images/marble-photos/granite/3.jpg",
-  "../../images/marble-photos/granite/4.jpg",
-  "../../images/marble-photos/granite/5.jpg",
-  "../../images/marble-photos/granite/6.jpg",
-  "../../images/marble-photos/granite/7.jpg",
-  "../../images/marble-photos/granite/8.jpg",
-  "../../images/marble-photos/granite/9.jpg",
-  "../../images/marble-photos/granite/10.jpg",
-  "../../images/marble-photos/granite/11.jpg",
-  "../../images/marble-photos/granite/12.jpg",
-  "../../images/marble-photos/granite/13.jpg",
+  "../../images/tas/sinks-bowls/1.jpg",
+  "../../images/tas/sinks-bowls/2.jpg",
+  "../../images/tas/sinks-bowls/3.jpg",
+  "../../images/tas/sinks-bowls/4.jpg",
+  "../../images/tas/sinks-bowls/5.jpg",
+  "../../images/tas/sinks-bowls/6.jpg",
+  "../../images/tas/sinks-bowls/7.jpg",
+  "../../images/tas/sinks-bowls/8.jpg",
+  "../../images/tas/sinks-bowls/9.jpg",
+  "../../images/tas/sinks-bowls/10.jpg",
+  "../../images/tas/sinks-bowls/11.jpg",
+  "../../images/tas/sinks-bowls/12.jpg",
+  "../../images/tas/sinks-bowls/13.jpg",
+  "../../images/tas/sinks-bowls/14.jpg",
+  "../../images/tas/sinks-bowls/15.jpg",
 ];
 images.forEach((image) => {
   image.addEventListener("click", () => {
@@ -42,32 +43,22 @@ images.forEach((image) => {
   });
 });
 
-// closeMod.addEventListener("click", () => {
-//   modal.style.display = "none";
-// });
-
-// modal.addEventListener("click", () => {
-//   modal.style.display = "none";
-// });
 window.onclick = function (e) {
   if (e.target == modal) {
     modal.style.display = "none";
   }
 };
-// let createArr = (length, path) => {};
 
 left.addEventListener("click", () => {
   number--;
   if (number < 0) number = photos.length - 1;
   modalImg.setAttribute("src", photos[number]);
   console.log(number);
-  // console.log(modalImg.getAttribute("src"));
 });
 
 right.addEventListener("click", () => {
   number++;
   if (number >= photos.length) number = 0;
   modalImg.setAttribute("src", photos[number]);
-  // console.log(number);
   console.log(modalImg.getAttribute("src"));
 });
