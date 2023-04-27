@@ -18,33 +18,35 @@ let gallery = [
   "../../../images/marble-photos/travertine/gold-travertine/gallery/7.jpg",
   "../../../images/marble-photos/travertine/gold-travertine/gallery/8.jpg",
 ];
-let pattern = [
-  "../../../images/marble-photos/travertine/gold-travertine/pattern/1.jpg",
-  "../../../images/marble-photos/travertine/gold-travertine/pattern/2.jpg",
-  "../../../images/marble-photos/travertine/gold-travertine/pattern/3.jpg",
-  "../../../images/marble-photos/travertine/gold-travertine/pattern/4.jpg",
-];
-let projects = [
-  "../../../images/marble-photos/travertine/gold-travertine/projects/1.jpg",
-  "../../../images/marble-photos/travertine/gold-travertine/projects/2.jpg",
-  "../../../images/marble-photos/travertine/gold-travertine/projects/3.jpg",
-  "../../../images/marble-photos/travertine/gold-travertine/projects/4.jpg",
-];
+
 images.forEach((image) => {
   image.addEventListener("click", () => {
     modal.style.display = "flex";
+
     let child = image.childNodes;
     let child2 = child[1].childNodes[1].childNodes[3];
-    console.log(child2);
+    // console.log(child2);
+
     src = child2.getAttribute("src");
     modalImg.setAttribute("src", src);
-    arr = src.split("/");
-    path = arr[7];
-    arr = arr[8].split(".");
-    console.log(path);
-    number = arr[0];
-    number--;
-    console.log(number);
+
+    let next =
+      image.nextSibling.nextSibling.childNodes[1].childNodes[1].childNodes[3];
+
+    let previous =
+      image.previousSibling.previousSibling.childNodes[1].childNodes[1]
+        .childNodes[3];
+
+    console.log(previous);
+    console.log(next);
+
+    // arr = src.split("/");
+    // path = arr[7];
+    // arr = arr[8].split(".");
+    // console.log(path);
+    // number = arr[0];
+    // number--;
+    // console.log(number);
   });
 });
 
