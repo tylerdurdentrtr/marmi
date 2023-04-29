@@ -30,15 +30,15 @@ images.forEach((image) => {
     src = child2.getAttribute("src");
     modalImg.setAttribute("src", src);
 
-    let next =
-      image.nextSibling.nextSibling.childNodes[1].childNodes[1].childNodes[3];
+    // let next =
+    //   image.nextSibling.nextSibling.childNodes[1].childNodes[1].childNodes[3];
 
-    let previous =
-      image.previousSibling.previousSibling.childNodes[1].childNodes[1]
-        .childNodes[3];
+    // let previous =
+    //   image.previousSibling.previousSibling.childNodes[1].childNodes[1]
+    //     .childNodes[3];
 
-    console.log(previous);
-    console.log(next);
+    // console.log(previous);
+    // console.log(next);
 
     // arr = src.split("/");
     // path = arr[7];
